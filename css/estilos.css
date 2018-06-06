@@ -5,6 +5,8 @@ body {
   color: white;
   background: url(../images/fsociety-mask-elliot.jpg) no-repeat center top #000;
   background-attachment: fixed; 
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .navbar {
@@ -77,13 +79,15 @@ body {
 }
 
 .media-embed img {
-  width: 100%;
+     margin:0 auto; /* this will center the page */
+   width:800px;
+
 }
 
 .media-embed .bold-text {
-  font-weight:900;
-  font-size: 72px;
-  letter-spacing: 20px;
+  font-weight:500;
+  font-size: 52px;
+  letter-spacing: 10px;
   position:absolute;
   right:0;
   bottom:0;
@@ -136,19 +140,6 @@ a:link {
 }
 
 /* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -185,4 +176,54 @@ textarea:focus, input:focus {
 
 input, select, textarea{
     color: #000;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+.button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.container {
+   margin:0 auto; /* this will center the page */
+   width:960px; /*  use your width here */
+}
+
+#normal{
+
 }
